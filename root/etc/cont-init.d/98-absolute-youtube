@@ -32,12 +32,12 @@ chown -R abc:abc "$scannerdir"
 
 plugindir="/config/Library/Application Support/Plex Media Server/Plug-ins"
 
-# clone or update Hama.bundle repo
-if [ ! -d "$plugindir/Hama.bundle" ]; then
+# clone or update YouTube-Agent.bundle repo
+if [ ! -d "$plugindir/YouTube-Agent.bundle" ]; then
   echo "**** no agent found, cloning ****"
-  git clone --depth 1 https://github.com/ZeroQI/Hama.bundle "$plugindir/Hama.bundle"
+  git clone --depth 1 https://github.com/ZeroQI/YouTube-Agent.bundle "$plugindir/YouTube-Agent.bundle"
 else
   echo "**** pulling latest update ****"
-  git -C "$plugindir/Hama.bundle" pull
+  git -C "$plugindir/YouTube-Agent.bundle" pull
 fi
-chown -R abc:abc "$plugindir/Hama.bundle"
+chown -R abc:abc "$plugindir/YouTube-Agent.bundle"
