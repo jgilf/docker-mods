@@ -4,7 +4,7 @@ on: [push, pull_request, workflow_dispatch]
 
 env:
   ENDPOINT: "jgilf/docker-mods"
-  BRANCH: "youtube"
+  BRANCH: "plex-absolute-youtube"
 
 jobs:
   build:
